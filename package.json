@@ -1,0 +1,22 @@
+{
+  "name": "hot-generator",
+  "version": "1.0.0",
+  "description": "Wraps a generator so that it shares the current value among all the instances.",
+  "main": "hg.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damianc/hot-generator.git"
+  },
+  "author": "damianc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damianc/hot-generator/issues"
+  },
+  "homepage": "https://github.com/damianc/hot-generator#readme",
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
+}
