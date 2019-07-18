@@ -4,12 +4,15 @@ class HotGenerator {
         var last;
         
         return function () {
-            return {
+            var hotGenAPI = {
                 next: (v) => last = gen.next(v),
                 return: (fv) => gen.return(fv),
                 throw: (e) => gen.throw(e),
                 last: () => last
             };
+
+            Object.setPrototypeOf(hotGenAPI, gen);
+            return hotGenAPI;
         };
     }
 }
