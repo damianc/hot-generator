@@ -52,3 +52,34 @@ hotNums.last();
 genA.next();
 // {value: 3, done: false}
 ```
+
+### `lastFrom()` method
+
+Similar to the `last()` method, but here we can explicitly tell what instance of a generator we are interested in.
+
+```
+var hotNums = new HotGenerator(function* () {
+	yield* [1, 2, 3, 4];
+});
+
+var genA = hotNums();
+var genB = hotNums();
+
+genA.next();
+// {value: 1, done: false}
+
+genB.next();
+// {value: 2, done: false}
+
+genA.next();
+// {value: 3, done: false}
+
+hotNums.last();
+// {value: 3, done: false}
+
+hotNums.lastFrom(genA);
+// {value: 3, done: false}
+
+hotNums.lastFrom(genB);
+// {value: 2, done: false}
+```
