@@ -30,7 +30,7 @@ genA.next();
 
 ### `last()` method
 
-The last() method of `HotGenerator` receives the last known value returned from any instance of a generator.
+The `last()` method of `HotGenerator` receives the last known value returned from any instance of a generator.
 
 ```
 var hotNums = new HotGenerator(function* () {
