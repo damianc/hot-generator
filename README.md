@@ -80,3 +80,7 @@ hotNums.lastFrom(genA);
 hotNums.lastFrom(genB);
 // {value: 2, done: false}
 ```
+
+### Caveats
+
+Currently it is impossible to pass arguments to any of the generators. The problem is that each newest instance of a generator would override behavior of all previous, so far defined generators.
