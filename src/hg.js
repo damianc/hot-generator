@@ -1,4 +1,4 @@
-module.exports = class HotGenerator {
+class HotGenerator {
     constructor(generator) {
         var gen = generator();
         var lasts = new WeakMap();
@@ -33,4 +33,8 @@ module.exports = class HotGenerator {
 
         return hotGenFn;
     }
+}
+
+if (typeof module != 'undefined' && typeof module.exports != 'undefined') {
+    module.exports = HotGenerator;
 }
