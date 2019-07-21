@@ -48,9 +48,6 @@ genB.next();
 
 hotNums.last();
 // {value: 2, done: false}
-
-genA.next();
-// {value: 3, done: false}
 ```
 
 ### `lastFrom()` method
