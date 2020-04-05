@@ -10,6 +10,22 @@
     "type": "git",
     "url": "git+https://github.com/damianc/hot-generator.git"
   },
+  "keywords": [
+    "javascript",
+    "es",
+    "generator",
+    "async",
+    "promise",
+    "rxjs",
+    "reactive",
+    "library",
+    "extension",
+    "utils",
+    "helpers",
+    "parallel",
+    "process",
+    "iteration"
+  ],
   "author": "damianc",
   "license": "ISC",
   "bugs": {
